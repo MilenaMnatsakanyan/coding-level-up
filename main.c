@@ -71,4 +71,16 @@ int main() {
     return 0;
 }
 
+#include "memove.h"
+int main() {
+    char arr[] = "123456789";
+
+    memove(arr + 2, arr, 5);
+    printf("src: %s\n", arr);
+   
+    return 0;
+
+}
+
+
 
