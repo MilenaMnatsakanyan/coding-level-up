@@ -60,3 +60,15 @@ int main() {
     return 0;
 }
 
+#include "memcopy.h"
+int main() {
+    char src[] = "barev";
+    char dest[20] ;
+    int n = 0;
+    scanf("%d", &n);
+    memcopy(dest, src,n);
+    printf("%s", dest);
+    return 0;
+}
+
+
