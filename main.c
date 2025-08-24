@@ -41,3 +41,22 @@ int main() {
 
     return 0;
 }
+#include <stdio.h>
+
+const char *strpbrkk(const char *str1, const char *str2);
+
+int main() {
+    const char *str1 = "barev milena";
+    const char *str2 = "hajox";
+
+    const char *result = strpbrkk(str1, str2);
+
+    if (result != 0) {
+        printf("First matched symbol is:%c\n", *result);
+    } else {
+        printf("No matchied symbol: ");
+    }
+
+    return 0;
+}
+
