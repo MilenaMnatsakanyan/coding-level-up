@@ -27,3 +27,17 @@ int main() {
 
     return 0;
 }
+
+
+#include "strcspnn.h"
+
+int main() {
+    const char *str1 = "hello world!";
+    const char *str2 = "w";
+
+    size_t count2 = strcspnn(str1, str2);
+
+    printf(" %zu\n", count2);
+
+    return 0;
+}
