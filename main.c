@@ -81,6 +81,23 @@ int main() {
     return 0;
 
 }
+#include <stdio.h>
+#include "mecmp.h"
+int main() {
+    char *arr1 = "barev";
+    char *arr2 = "bareV";
+    int result = mecmp(arr1, arr2, 3);
+    if(result == 0) {
+        printf("they have the same size ");
+    }
+    else if(result < 0) {
+        printf("arr2  > arr1 ");
+    }
+    else if(result > 0){
+        printf("arr2 < arr1");
+    }
+return 0;
+}
 
 
 
