@@ -14,6 +14,6 @@ const char *strpbrkk(const char *str1, const char *str2) {
         i++;
     }
 
-    return 0;  // եթե ոչինչ չգտնվեց
+    return 0;  
 }
 
