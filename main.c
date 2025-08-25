@@ -100,4 +100,19 @@ return 0;
 }
 
 
+#include "memchar.h"
+int main() {
+    const char arr[] = "abcdef";
+    int value = 'd';
+    int n = 6;        
 
+    char *result = memchar(arr, value, n);
+
+    if (result != NULL) {
+        printf("Found  %c %s\n", value, result - arr);
+    } else {
+        printf("Character not found %c\n", value);
+    }
+
+    return 0;
+}
