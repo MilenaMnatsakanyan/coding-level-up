@@ -116,3 +116,14 @@ int main() {
 
     return 0;
 }
+#include "memmset.h"
+int main() {
+    char arr[20];
+    int value = 'd';
+    int n = 9;
+    memmset(arr, value, n);
+    arr[n] = '\0';
+    printf("%s", arr);
+    return 0;
+}
+
