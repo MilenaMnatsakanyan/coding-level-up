@@ -126,4 +126,12 @@ int main() {
     printf("%s", arr);
     return 0;
 }
+#include "strev.h"
+int main() {
+    const char arr2[SIZE] = "hello";
+    char arr1[SIZE];
+    char *res = strev(arr1, arr2);
+    printf("%s", res);
+    return 0;
+}
 
